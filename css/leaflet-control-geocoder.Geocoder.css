@@ -1,0 +1,147 @@
+/* CSS Perbaikan */
+.leaflet-control-geocoder {
+    border-radius: 4px;
+    background: white;
+    min-width: 26px;
+    min-height: 26px;
+    position: relative; /* Tambahkan posisi relatif */
+    display: inline-block; /* Tambahkan tampilan inline-block */
+}
+
+.leaflet-touch .leaflet-control-geocoder {
+    min-width: 30px;
+    min-height: 30px;
+}
+
+.leaflet-control-geocoder a, .leaflet-control-geocoder .leaflet-control-geocoder-icon {
+    border-bottom: none;
+    display: inline-block;
+    vertical-align: middle; /* Tambahkan align vertikal tengah */
+}
+
+.leaflet-control-geocoder .leaflet-control-geocoder-alternatives a {
+    width: inherit;
+    height: inherit;
+    line-height: inherit;
+}
+
+.leaflet-control-geocoder a:hover, .leaflet-control-geocoder .leaflet-control-geocoder-icon:hover {
+    border-bottom: none;
+    display: inline-block;
+}
+
+.leaflet-control-geocoder-form {
+    display: none;
+    vertical-align: middle;
+    position: absolute; /* Tambahkan posisi absolut */
+    top: 30px; /* Sesuaikan dengan tinggi kontrol */
+    left: 0; /* Geser ke kiri */
+    background: white; /* Tambahkan latar belakang putih */
+    border: 1px solid #ccc; /* Tambahkan border abu-abu */
+    padding: 5px; /* Tambahkan padding */
+    z-index: 1000; /* Tingkatkan indeks Z */
+}
+
+.leaflet-control-geocoder-expanded .leaflet-control-geocoder-form {
+    display: inline-block;
+}
+
+.leaflet-control-geocoder-form input {
+    font-size: 120%;
+    border: 0;
+    background-color: transparent;
+    width: 200px; /* Sesuaikan lebar input */
+    vertical-align: middle; /* Tambahkan align vertikal tengah */
+    margin-right: 5px; /* Tambahkan margin kanan */
+}
+
+.leaflet-control-geocoder-icon {
+    border-radius: 4px;
+    width: 26px;
+    height: 26px;
+    border: none;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    display: inline-block; /* Tambahkan tampilan inline-block */
+    vertical-align: middle; /* Tambahkan align vertikal tengah */
+}
+
+.leaflet-touch .leaflet-control-geocoder-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.leaflet-control-geocoder-throbber .leaflet-control-geocoder-icon {
+    background-image: url(images/throbber.gif);
+}
+
+.leaflet-control-geocoder-form-no-error {
+    display: none;
+}
+
+.leaflet-control-geocoder-form input:focus {
+    outline: none;
+}
+
+.leaflet-control-geocoder-form button {
+    display: none;
+}
+
+.leaflet-control-geocoder-error {
+    margin-top: 8px;
+    margin-left: 8px;
+    display: block;
+    color: #444;
+}
+
+.leaflet-control-geocoder-alternatives {
+    display: block;
+    width: 272px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto; /* Tambahkan overflow-y untuk scroll */
+    max-height: 200px; /* Tentukan ketinggian maksimum */
+}
+
+.leaflet-control-geocoder-alternatives-minimized {
+    display: none;
+    height: 0;
+}
+
+.leaflet-control-geocoder-alternatives li {
+    white-space: nowrap;
+    display: block;
+    overflow: hidden;
+    padding: 5px 8px;
+    text-overflow: ellipsis;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.leaflet-control-geocoder-alternatives li a, .leaflet-control-geocoder-alternatives li a:hover {
+    width: inherit;
+    height: inherit;
+    line-height: inherit;
+    background: inherit;
+    border-radius: inherit;
+    text-align: left;
+}
+
+.leaflet-control-geocoder-alternatives li:last-child {
+    border-bottom: none;
+}
+
+.leaflet-control-geocoder-alternatives li:hover, .leaflet-control-geocoder-selected {
+    background-color: #f5f5f5;
+}
+
+.leaflet-control-geocoder-address-detail {
+    
+}
+
+.leaflet-control-geocoder-address-context {
+    color: #666;
+}
